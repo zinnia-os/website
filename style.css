@@ -1,14 +1,14 @@
-* {
+*,*::before,*::after {
     font-family: monospace;
+}
+
+.container {
+    width: fit-content;
+    margin: auto;
 }
 
 p {
     max-width: 80ch;
-}
-
-.logo {
-    width: 120px;
-    height: auto;
 }
 
 .shot {
@@ -31,4 +31,12 @@ p {
     align-items: center;
     gap: 5px;
     margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
 }
