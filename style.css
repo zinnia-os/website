@@ -11,6 +11,14 @@ p {
     max-width: 80ch;
 }
 
+.subtitle { 
+    font-size: 1.17em;
+}
+
+.article-heading {
+    font-size: 1.5em;
+}
+
 .shot {
     display: block;
     max-width: 100%;
