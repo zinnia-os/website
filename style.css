@@ -1,14 +1,22 @@
-* {
+*,*::before,*::after {
     font-family: monospace;
+}
+
+.container {
+    width: fit-content;
+    margin: auto;
 }
 
 p {
     max-width: 80ch;
 }
 
-.logo {
-    width: 120px;
-    height: auto;
+.subtitle { 
+    font-size: 1.17em;
+}
+
+.article-heading {
+    font-size: 1.5em;
 }
 
 .shot {
@@ -31,4 +39,12 @@ p {
     align-items: center;
     gap: 5px;
     margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
 }
