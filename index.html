@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zinnia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="entry" src="img/logo.svg" alt="zinnia">
+
+    <h1>zinnia</h1>
+    <h3>A modular 64-bit Unix-like kernel written in Rust</h3>
+
+    <h2>about</h2>
+    <p>
+        The kernel is written in (almost) 100% Rust and attempts to avoid unsafe code where possible.
+
+        It implements a big range of POSIX APIs in system calls, but also exposes common extensions found in Linux and
+        BSDs, like epoll and timerfd.
+
+        This allows it to run a somewhat modern desktop using Wayland and X11 sessions.
+    </p>
+    <p>
+        Most drivers are implemented as modules. These are Rust ELF dylibs which get loaded and linked during boot from
+        an initrd, similar to Linux systems. Zinnia can boot from any UEFI based system thanks to the Limine bootloader.
+    </p>
+    <p>
+        I started this project in 2024 to learn more about systems programming, but over time it started gain more and
+        more features.
+        Today the kernel is able to boot on many real x86_64 machines.
+        aarch64 and riscv64 support is planned, but not a priority at the moment.
+
+        Fixes are always welcome!
+    </p>
+
+    <h2>links</h2>
+
+    <div class="entry">
+        <img src="https://github.com/favicon.ico" alt="">
+        <a href="https://github.com/zinnia-os/zinnia">zinnia</a> - leave a star :D
+    </div>
+    <div class="entry">
+        <img src="https://github.com/favicon.ico" alt="">
+        <a href="https://github.com/zinnia-os/bootstrap">bootstrap</a>
+    </div>
+    <div class="entry">
+        <img src="https://github.com/favicon.ico" alt="">
+        <a href="https://github.com/Limine-Bootloader/Limine">Limine</a>
+    </div>
+
+    <h2>screenshots</h2>
+
+    <p class="entry">Weston runninng in QEMU</p>
+    <img class="shot" src="img/qemu_weston.png" alt="zinnia qemu with weston">
+
+    <p class="entry">XFCE runninng in QEMU</p>
+    <img class="shot" src="img/qemu_xfce.png" alt="zinnia qemu with xfce">
+
+    <p class="entry">XFCE runninng on a ThinkPad E14 G7</p>
+    <img class="shot" src="img/real_hw.jpg" alt="zinnia running on real hardware">
+
+    © Marvin Friedrich
+</body>
+
+</html>
